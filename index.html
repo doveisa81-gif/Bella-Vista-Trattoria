@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bella Vista Trattoria | Wood-Fired Italian Kitchen</title>
+  <meta name="description" content="Bella Vista Trattoria: handmade pasta, wood-fired pizza and family recipes in a warm, candlelit dining room. Reserve your table online.">
+  <meta name="theme-color" content="#5a1624">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%235a1624'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23d4c56a' font-family='Georgia,serif'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Bella Vista Trattoria, home">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <span class="brand-name">Bella Vista<small>Trattoria</small></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Visit</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-gold btn-sm" type="button" data-open-reserve>Reserve a table</button>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content container">
+        <p class="hero-kicker">Family-run since 1994</p>
+        <h1>Bella Vista Trattoria</h1>
+        <p class="slogan">Slow-simmered sauces, wood-fired crusts, and a table always saved for you.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-cream btn-lg">View Menu</a>
+          <button type="button" class="btn btn-gold btn-lg" data-open-reserve>Reserve Table</button>
+        </div>
+      </div>
+      <a href="#menu" class="scroll-cue" aria-label="Scroll to menu"><span></span></a>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <h2>From our kitchen</h2>
+          <p>Pasta rolled each morning, dough rested for 48 hours, and tomatoes from a single farm outside Salerno.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab" role="tab" id="tab-appetizers" aria-controls="panel-appetizers" aria-selected="true" type="button">Appetizers</button>
+          <button class="tab" role="tab" id="tab-pasta" aria-controls="panel-pasta" aria-selected="false" tabindex="-1" type="button">Pasta</button>
+          <button class="tab" role="tab" id="tab-pizza" aria-controls="panel-pizza" aria-selected="false" tabindex="-1" type="button">Wood-Fired Pizza</button>
+          <button class="tab" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1" type="button">Desserts</button>
+        </div>
+
+        <div class="panel active" role="tabpanel" id="panel-appetizers" aria-labelledby="tab-appetizers" tabindex="0">
+          <ul class="dishes">
+            <li class="dish"><div class="dish-top"><h3>Bruschetta al Pomodoro</h3><span class="dots"></span><span class="price">$11</span></div><p>Grilled country bread, vine tomatoes, garlic, basil and aged balsamic.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Burrata e Prosciutto</h3><span class="dots"></span><span class="price">$17</span></div><p>Creamy burrata, 24-month prosciutto di Parma, grilled peach and olive oil.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Arancini</h3><span class="dots"></span><span class="price">$13</span></div><p>Crisp saffron risotto balls filled with mozzarella, served over spicy tomato sugo.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Calamari Fritti</h3><span class="dots"></span><span class="price">$15</span></div><p>Lightly fried calamari with lemon, fried parsley and charred lemon aioli.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Caprese della Casa</h3><span class="dots"></span><span class="price">$14</span></div><p>Heirloom tomatoes, fior di latte, basil oil and flaky sea salt.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Polpette della Nonna</h3><span class="dots"></span><span class="price">$14</span></div><p>Veal and pork meatballs simmered in tomato, finished with ricotta and basil.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-pasta" aria-labelledby="tab-pasta" tabindex="0" hidden>
+          <ul class="dishes">
+            <li class="dish"><div class="dish-top"><h3>Tagliatelle al Ragù</h3><span class="dots"></span><span class="price">$22</span></div><p>Fresh egg pasta with a six-hour beef and pork ragù, finished with Parmigiano Reggiano.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Spaghetti alle Vongole</h3><span class="dots"></span><span class="price">$26</span></div><p>Manila clams, white wine, garlic, chili and parsley.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Ravioli di Ricotta e Spinaci</h3><span class="dots"></span><span class="price">$21</span></div><p>Handmade ravioli in brown butter and sage with toasted hazelnuts.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Rigatoni alla Norma</h3><span class="dots"></span><span class="price">$19</span></div><p>Roasted eggplant, tomato, basil and salted ricotta. Vegetarian.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Lasagna Bolognese</h3><span class="dots"></span><span class="price">$23</span></div><p>Layers of spinach pasta, ragù, béchamel and bubbling mozzarella.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Cacio e Pepe</h3><span class="dots"></span><span class="price">$20</span></div><p>Tonnarelli, Pecorino Romano and cracked black pepper. Simple and exact.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-pizza" aria-labelledby="tab-pizza" tabindex="0" hidden>
+          <ul class="dishes">
+            <li class="dish"><div class="dish-top"><h3>Margherita</h3><span class="dots"></span><span class="price">$16</span></div><p>San Marzano tomato, fior di latte, basil and extra-virgin olive oil.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Diavola</h3><span class="dots"></span><span class="price">$19</span></div><p>Spicy salami, tomato, mozzarella, Calabrian chili and honey.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Quattro Formaggi</h3><span class="dots"></span><span class="price">$19</span></div><p>Mozzarella, gorgonzola, fontina and Parmigiano with a drizzle of truffle honey.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Funghi e Salsiccia</h3><span class="dots"></span><span class="price">$20</span></div><p>Roasted mushrooms, fennel sausage, caramelized onion and thyme.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Prosciutto e Rucola</h3><span class="dots"></span><span class="price">$21</span></div><p>Baked white pie topped with prosciutto, arugula, shaved Parmigiano and lemon.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Ortolana</h3><span class="dots"></span><span class="price">$18</span></div><p>Grilled zucchini, peppers, artichoke and olives on tomato. Vegan on request.</p></li>
+          </ul>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" tabindex="0" hidden>
+          <ul class="dishes">
+            <li class="dish"><div class="dish-top"><h3>Tiramisù Classico</h3><span class="dots"></span><span class="price">$10</span></div><p>Espresso-soaked savoiardi, mascarpone cream and bitter cocoa.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Panna Cotta</h3><span class="dots"></span><span class="price">$9</span></div><p>Vanilla bean custard with macerated berries and a thread of aged balsamic.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Cannoli Siciliani</h3><span class="dots"></span><span class="price">$9</span></div><p>Crisp shells filled to order with sweet ricotta, pistachio and chocolate.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Affogato</h3><span class="dots"></span><span class="price">$8</span></div><p>Vanilla gelato drowned in a shot of hot espresso. Add amaretto for $4.</p></li>
+            <li class="dish"><div class="dish-top"><h3>Torta al Limone</h3><span class="dots"></span><span class="price">$9</span></div><p>Olive oil lemon cake with whipped mascarpone and candied zest.</p></li>
+          </ul>
+        </div>
+
+        <p class="menu-note">Please tell us about allergies before ordering. Gluten-free pasta and pizza bases are available.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section-dark" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <h2>A look inside</h2>
+          <p>Fire, flour and candlelight. These tiles are illustrated placeholders; swap in your own photos (see the comment in this file).</p>
+        </header>
+
+        <!-- To use real photos: replace the <svg> inside a .tile-art with
+             <img src="photos/your-photo.jpg" alt="Describe the photo" loading="lazy"> -->
+        <div class="gallery">
+          <figure class="tile tile-wide tile-1">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a margherita pizza"><circle cx="100" cy="100" r="78" fill="#d9a35b"/><circle cx="100" cy="100" r="66" fill="#b8332a"/><g fill="#f6ecd6"><circle cx="80" cy="82" r="14"/><circle cx="122" cy="92" r="16"/><circle cx="96" cy="126" r="15"/><circle cx="132" cy="130" r="9"/><circle cx="66" cy="112" r="9"/></g><g fill="#5f7a2e"><path d="M104 72c10-4 18 2 18 2s-6 10-18 8c-4-4 0-10 0-10Z"/><path d="M70 128c8-6 16-2 16-2s-3 10-14 10c-3-3-2-8-2-8Z"/></g></svg></div>
+            <figcaption>Margherita, 90 seconds in the oak-fired oven</figcaption>
+          </figure>
+          <figure class="tile tile-2">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a bowl of pasta"><circle cx="100" cy="104" r="74" fill="#f6ecd6"/><circle cx="100" cy="104" r="58" fill="#e2b866"/><g fill="none" stroke="#c9902f" stroke-width="5" stroke-linecap="round"><path d="M56 104c10-30 36-40 58-30s26 36 4 48-44 0-40-22 28-22 32-6"/><path d="M62 124c24 20 66 14 78-14"/></g><g fill="#b8332a"><circle cx="86" cy="96" r="6"/><circle cx="118" cy="116" r="6"/><circle cx="100" cy="82" r="5"/></g><path d="M112 98c8-6 16-2 16-2s-4 9-14 8Z" fill="#5f7a2e"/></svg></div>
+            <figcaption>Tagliatelle al ragù</figcaption>
+          </figure>
+          <figure class="tile tile-3">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of tiramisu"><rect x="40" y="70" width="120" height="70" rx="6" fill="#f6ecd6"/><rect x="40" y="92" width="120" height="14" fill="#6b3a24"/><rect x="40" y="118" width="120" height="12" fill="#6b3a24"/><rect x="40" y="70" width="120" height="14" rx="6" fill="#8a5a3a"/><g fill="#4a2a1a"><circle cx="62" cy="76" r="2"/><circle cx="84" cy="78" r="2"/><circle cx="104" cy="75" r="2"/><circle cx="128" cy="78" r="2"/><circle cx="146" cy="76" r="2"/></g><ellipse cx="100" cy="150" rx="78" ry="8" fill="#00000026"/></svg></div>
+            <figcaption>Tiramisù, made fresh each morning</figcaption>
+          </figure>
+          <figure class="tile tile-4">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of bruschetta"><g transform="rotate(-8 100 100)"><rect x="34" y="80" width="64" height="44" rx="10" fill="#d9a35b"/><rect x="104" y="84" width="64" height="44" rx="10" fill="#d9a35b"/></g><g fill="#b8332a"><circle cx="56" cy="96" r="8"/><circle cx="78" cy="108" r="7"/><circle cx="126" cy="102" r="8"/><circle cx="148" cy="112" r="7"/></g><g fill="#5f7a2e"><path d="M64 90c8-5 14-1 14-1s-4 8-12 7Z"/><path d="M134 96c8-5 14-1 14-1s-4 8-12 7Z"/></g></svg></div>
+            <figcaption>Bruschetta al pomodoro</figcaption>
+          </figure>
+          <figure class="tile tile-5">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a glass of red wine"><path d="M70 40h60c2 40-8 66-30 70-22-4-32-30-30-70Z" fill="#f6ecd6" fill-opacity=".25" stroke="#f6ecd6" stroke-width="3"/><path d="M74 70h52c-2 24-10 38-26 40-16-2-24-16-26-40Z" fill="#7a1a2c"/><path d="M100 110v48M76 160h48" stroke="#f6ecd6" stroke-width="4" stroke-linecap="round"/></svg></div>
+            <figcaption>Regional wines, poured by the glass</figcaption>
+          </figure>
+          <figure class="tile tile-wide tile-6">
+            <div class="tile-art"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of the candlelit dining room"><g fill="#3a0d17"><path d="M20 190V90a30 30 0 0 1 60 0v100Z"/><path d="M120 190V90a30 30 0 0 1 60 0v100Z"/></g><g fill="#e8c76a"><path d="M24 190V92a26 26 0 0 1 52 0v98Z" fill-opacity=".18"/><path d="M124 190V92a26 26 0 0 1 52 0v98Z" fill-opacity=".18"/></g><path d="M100 20v34" stroke="#d4c56a" stroke-width="2"/><path d="M84 54h32l-6 18H90Z" fill="#d4c56a"/><circle cx="100" cy="76" r="14" fill="#f6e6a8" fill-opacity=".35"/><rect x="40" y="150" width="120" height="8" rx="3" fill="#f6ecd6"/><g fill="#f6e6a8"><rect x="60" y="136" width="4" height="14"/><rect x="136" y="136" width="4" height="14"/></g><g fill="#ffb84a"><ellipse cx="62" cy="132" rx="3" ry="5"/><ellipse cx="138" cy="132" rx="3" ry="5"/></g></svg></div>
+            <figcaption>Candlelit tables, seats for 48</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <h2>Come hungry</h2>
+          <p>Walk-ins are welcome, but weekends fill up. Reserve ahead and we'll hold your table for 15 minutes.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="info-card">
+            <h3>Address</h3>
+            <address>
+              214 Olive Street<br>
+              Your City, ST 00000<br>
+              <a href="tel:+15550142210">(555) 014-2210</a><br>
+              <a href="mailto:ciao@bellavista.example">ciao@bellavista.example</a>
+            </address>
+            <a class="text-link" href="https://maps.google.com/?q=214+Olive+Street" target="_blank" rel="noopener">Get directions</a>
+          </div>
+
+          <div class="info-card">
+            <h3>Opening hours</h3>
+            <table class="hours" id="hours">
+              <tr data-days="1"><th scope="row">Monday</th><td>Closed</td></tr>
+              <tr data-days="2"><th scope="row">Tuesday</th><td>5:00 – 9:30 pm</td></tr>
+              <tr data-days="3"><th scope="row">Wednesday</th><td>5:00 – 9:30 pm</td></tr>
+              <tr data-days="4"><th scope="row">Thursday</th><td>5:00 – 9:30 pm</td></tr>
+              <tr data-days="5"><th scope="row">Friday</th><td>5:00 – 10:30 pm</td></tr>
+              <tr data-days="6"><th scope="row">Saturday</th><td>5:00 – 10:30 pm</td></tr>
+              <tr data-days="0"><th scope="row">Sunday</th><td>12:00 – 9:00 pm</td></tr>
+            </table>
+          </div>
+
+          <div class="info-card">
+            <h3>Parking</h3>
+            <ul class="parking">
+              <li>Free lot behind the restaurant, entrance on Pine Alley (22 spaces).</li>
+              <li>Complimentary valet Friday and Saturday from 6 pm.</li>
+              <li>Street parking on Olive Street is free after 6 pm.</li>
+              <li>Two accessible spaces by the side door, with a step-free entrance.</li>
+            </ul>
+          </div>
+
+          <div class="map-placeholder" role="img" aria-label="Map placeholder">
+            <!-- Replace with a Google Maps or OpenStreetMap <iframe> -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            <span>Map goes here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Bella Vista Trattoria</p>
+      <p>&copy; <span id="year">2026</span> Bella Vista Trattoria. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL -->
+  <dialog id="reserve-modal" class="modal" aria-labelledby="reserve-title">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close-reserve aria-label="Close reservation form">&times;</button>
+      <h2 id="reserve-title">Reserve a table</h2>
+      <p class="modal-sub">For parties over 8, please call us at (555) 014-2210.</p>
+
+      <form id="reserve-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="r-name">Full name</label>
+            <input id="r-name" name="name" type="text" autocomplete="name" required>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="r-phone">Phone</label>
+            <input id="r-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="r-email">Email</label>
+          <input id="r-email" name="email" type="email" autocomplete="email" required>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="row row-3">
+          <div class="field">
+            <label for="r-date">Date</label>
+            <input id="r-date" name="date" type="date" required>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="r-time">Time</label>
+            <select id="r-time" name="time" required>
+              <option value="">Select</option>
+              <option>12:00 pm</option><option>12:30 pm</option><option>1:00 pm</option><option>1:30 pm</option><option>2:00 pm</option>
+              <option>5:00 pm</option><option>5:30 pm</option><option>6:00 pm</option><option>6:30 pm</option><option>7:00 pm</option>
+              <option>7:30 pm</option><option>8:00 pm</option><option>8:30 pm</option><option>9:00 pm</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="r-guests">Guests</label>
+            <select id="r-guests" name="guests" required>
+              <option value="">Select</option>
+              <option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option>
+              <option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="r-notes">Allergies or special occasion <span class="optional">(optional)</span></label>
+          <textarea id="r-notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-maroon btn-block">Confirm reservation</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
